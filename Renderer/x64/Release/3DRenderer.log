@@ -1,1 +1,27 @@
-﻿  3DRenderer.vcxproj -> C:\Users\anoma\Desktop\C++\SFML\3DRenderer\x64\Release\Raycasting.exe
+﻿  graphics.cpp
+  main.cpp
+C:\Users\anoma\Desktop\C++\SFML\RaycastIntersectionRenderer\Renderer\main.cpp(49,52): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  util.cpp
+C:\Users\anoma\Desktop\C++\SFML\RaycastIntersectionRenderer\Renderer\util.cpp(31,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\anoma\Desktop\C++\SFML\RaycastIntersectionRenderer\Renderer\util.cpp(33,67): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\anoma\Desktop\C++\SFML\RaycastIntersectionRenderer\Renderer\util.cpp(33,58): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\anoma\Desktop\C++\SFML\RaycastIntersectionRenderer\Renderer\util.cpp(34,92): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\anoma\Desktop\C++\SFML\RaycastIntersectionRenderer\Renderer\util.cpp(36,67): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+  Generating code
+  7 of 24 functions (29.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  3DRenderer.vcxproj -> C:\Users\anoma\Desktop\C++\SFML\RaycastIntersectionRenderer\Renderer\x64\Release\Raycasting.exe

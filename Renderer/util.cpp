@@ -25,15 +25,15 @@ sf::RectangleShape *ConstructFOV(int angle, double angleOff, double length, Grap
 				closestPoint = intrsPoint;
 		}
 
-		double rSqrt = 1 / (pos.Dist(closestPoint) + 1);
+		double rSq = 1 / pos.DistSq(closestPoint);
 
-		double rectY = MEASURE * rSqrt;
+		double rectY = (double)MEASURE * (double)MEASURE * rSq;
 		int index = i + angle / 2;
 
 		rects[index] = sf::RectangleShape(sf::Vector2f(MEASURE / angle, -rectY));
-		rects[index].move(sf::Vector2f(index * ((float)MEASURE / angle), (MEASURE + rectY)/2));
+		rects[index].move(sf::Vector2f(index * ((float)MEASURE / angle), ((float)MEASURE + rectY)/2));
 		
-		sf::Color col(MAX_RGBA, MAX_RGBA, MAX_RGBA, MAX_RGBA * (rSqrt*2));
+		sf::Color col(MAX_RGBA, MAX_RGBA, MAX_RGBA, MAX_RGBA * MAX_RGBA * rSq);
 		rects[index].setFillColor(col);
 	}
 

@@ -14,7 +14,7 @@
 
 #define SPEED 0.03
 #define TURN 0.1
-#define INIT_POS { 118.9, 220.55 }
+#define INIT_POS { 118.9, 247.31 }
 
 #define RAD(x) ((x) * M_PI/180)
 #define CHECK(key) if(sf::Keyboard::isKeyPressed(sf::Keyboard::##key))
